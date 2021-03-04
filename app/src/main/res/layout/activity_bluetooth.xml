@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageBt"
+        android:layout_width="94dp"
+        android:layout_height="93dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/listViewDevice"
+        app:layout_constraintEnd_toStartOf="@+id/space2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleBluetooth" />
+
+    <Button
+        android:id="@+id/buttonBtOn"
+        android:layout_width="161dp"
+        android:layout_height="47dp"
+        android:text="@string/sBtButtonOn"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBtOff"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleBluetooth" />
+
+    <TextView
+        android:id="@+id/textViewTitleBluetooth"
+        android:layout_width="409dp"
+        android:layout_height="39dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="@string/sBtTitle"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBtOn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonBtReturn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/sButtonReturn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBluetoothCheck"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/buttonBtOff"
+        android:layout_width="161dp"
+        android:layout_height="47dp"
+        android:text="@string/sBtButtonOff"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBtDiscovery"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBtOn" />
+
+    <Button
+        android:id="@+id/buttonBtConnect"
+        android:layout_width="161dp"
+        android:layout_height="47dp"
+        android:text="@string/sBtConnect"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBtConnectLastDevice"
+        app:layout_constraintEnd_toStartOf="@+id/listViewDevice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBtDiscovery" />
+
+    <Button
+        android:id="@+id/buttonBtDisconnect"
+        android:layout_width="161dp"
+        android:layout_height="47dp"
+        android:text="@string/sBtButtonDisconnect"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTestBt"
+        app:layout_constraintEnd_toStartOf="@+id/listViewDevice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBtConnectLastDevice" />
+
+    <Button
+        android:id="@+id/buttonBtDiscovery"
+        android:layout_width="161dp"
+        android:layout_height="47dp"
+        android:text="@string/sBtButtonDiscovery"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBtConnect"
+        app:layout_constraintEnd_toStartOf="@+id/listViewDevice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBtOff" />
+
+    <Button
+        android:id="@+id/buttonBtConnectLastDevice"
+        android:layout_width="161dp"
+        android:layout_height="47dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sBtButtonConnectLastDevice"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBtDisconnect"
+        app:layout_constraintEnd_toStartOf="@+id/listViewDevice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBtConnect" />
+
+    <Button
+        android:id="@+id/buttonTestBt"
+        android:layout_width="161dp"
+        android:layout_height="47dp"
+        android:text="@string/sBtButtonTest"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextBluetoothTestCommand"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBtDisconnect" />
+
+    <Button
+        android:id="@+id/buttonBtNext"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/sButtonNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewBluetoothCheck"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/textViewBluetoothCheck"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBtNext"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonBtReturn"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <EditText
+        android:id="@+id/editTextTextBluetoothTestCommand"
+        android:layout_width="248dp"
+        android:layout_height="47dp"
+        android:autoSizePresetSizes="uniform"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/hBluetoothTestCommand"
+        android:importantForAutofill="yes"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonTestBt"
+        app:layout_constraintTop_toBottomOf="@+id/listViewDevice" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="309dp"
+        android:foregroundGravity="left"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBtReturn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTestBt">
+
+        <TextView
+            android:id="@+id/textViewDisplayBluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizePresetSizes="uniform"
+            android:gravity="start"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/buttonBtReturn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonTestBt" />
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/listViewDevice"
+        android:layout_width="248dp"
+        android:layout_height="186dp"
+        android:background="@color/backgroundListView"
+        android:foregroundGravity="left"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextBluetoothTestCommand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonBtConnect"
+        app:layout_constraintTop_toBottomOf="@+id/space" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="77dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toTopOf="@+id/listViewDevice"
+        app:layout_constraintEnd_toStartOf="@+id/imageBt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/listViewDevice"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleBluetooth" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="75dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toTopOf="@+id/listViewDevice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageBt"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleBluetooth" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

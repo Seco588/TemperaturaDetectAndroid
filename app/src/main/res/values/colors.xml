@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="backgroundListView">#37FFFFFF</color>
+    <color name="colorText">#FBFBFB</color>
+    <color name="colorTextDebug">#FFFFFF</color>
+    <color name="colorTextBackground">#43040404</color>
+    <color name="colorTextBackgroundView">#81040404</color>
+    <color name="nofaceDetect">#0A575757</color>
+
+    <color name="facedetect">#66ECFBFB</color>
+
+</resources>

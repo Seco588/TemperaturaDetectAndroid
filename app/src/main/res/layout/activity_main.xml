@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitleMain"
+        android:layout_width="409dp"
+        android:layout_height="35dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="@string/sTitleMain"
+        app:layout_constraintBottom_toTopOf="@+id/textRoiW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textRoiW"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:text="@string/sRoiW"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalRoiW"
+        app:layout_constraintEnd_toStartOf="@+id/textViewRoiOffsetW"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleMain" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalRoiW"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hRoiW"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRoiH"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalRoiOffsetW"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRoiW" />
+
+    <TextView
+        android:id="@+id/textViewRoiH"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:text="@string/sRoiH"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalRoiH"
+        app:layout_constraintEnd_toStartOf="@+id/textViewRoiOffsetH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalRoiW" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalRoiH"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hRoiH"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOvalFaceOffsetX"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalRoiOffsetH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoiH" />
+
+
+    <TextView
+        android:id="@+id/textViewRoiOffsetW"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sRoiOffsetW"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalRoiOffsetW"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTempMin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textRoiW"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleMain" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalRoiOffsetW"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hRoiOffsetW"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRoiOffsetH"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalTempMin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalRoiW"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoiOffsetW" />
+
+    <TextView
+        android:id="@+id/textViewRoiOffsetH"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sRoiOffsetH"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalRoiOffsetH"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTempMax"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewRoiH"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalRoiOffsetW" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalRoiOffsetH"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hRoiOffsetH"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOvalFaceOffsetY"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalTempMax"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalRoiH"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoiOffsetH" />
+
+    <TextView
+        android:id="@+id/textViewTempMin"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:text="@string/sTempMin"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalTempMin"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTempThreshold"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewRoiOffsetW"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleMain" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalTempMin"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hTempMin"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTempMax"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalTempThreshold"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalRoiOffsetW"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTempMin" />
+
+    <TextView
+        android:id="@+id/textViewTempMax"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:text="@string/sTempMax"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalTempMax"
+        app:layout_constraintEnd_toStartOf="@+id/textViewRoiThickness"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewRoiOffsetH"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalTempMin" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalTempMax"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hTempMax"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBluetoothCommand"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberRoiThickness"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalRoiOffsetH"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTempMax" />
+
+    <TextView
+        android:id="@+id/textViewTempThreshold"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:text="@string/sTempThreshold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalTempThreshold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTempMin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleMain" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalTempThreshold"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hTempThreshold"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRoiThickness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalTempMin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTempThreshold" />
+
+    <TextView
+        android:id="@+id/textViewRoiThickness"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:text="@string/sRoiThickness"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberRoiThickness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTempMax"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalTempThreshold" />
+
+    <EditText
+        android:id="@+id/editTextNumberRoiThickness"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hRoiThickness"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textViewChecksToBeCarriedOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalTempMax"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoiThickness" />
+
+    <TextView
+        android:id="@+id/textViewOvalFaceOffsetX"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sOvalFaceOffsetX"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalOvalFaceOffsetX"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOvalFaceOffsetY"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalRoiH" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalOvalFaceOffsetX"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hOvalFaceOffsetX"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperatureOk"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalOvalFaceOffsetY"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOvalFaceOffsetX" />
+
+    <TextView
+        android:id="@+id/textViewOvalFaceOffsetY"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sOvalFaceOffsetY"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalOvalFaceOffsetY"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBluetoothCommand"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewOvalFaceOffsetX"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalRoiOffsetH" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalOvalFaceOffsetY"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="4"
+        android:hint="@string/hOvalFaceOffsetY"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperatureOk"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBluetoothCommand"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalOvalFaceOffsetX"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOvalFaceOffsetY" />
+
+
+    <TextView
+        android:id="@+id/textViewBluetoothCommand"
+        android:layout_width="96dp"
+        android:layout_height="28dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sBluetoothCommandLine"
+        app:layout_constraintBottom_toTopOf="@+id/editTextBluetoothCommandToSend"
+        app:layout_constraintEnd_toStartOf="@+id/textViewChecksToBeCarriedOut"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewOvalFaceOffsetY"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalTempMax" />
+
+    <EditText
+        android:id="@+id/editTextBluetoothCommandToSend"
+        android:layout_width="96dp"
+        android:layout_height="44dp"
+        android:ems="4"
+        android:hint="@string/hBluetoothCommandToSend"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNoFaceDetect"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberChecksToBeCarriedOut"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalOvalFaceOffsetY"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBluetoothCommand" />
+
+    <TextView
+        android:id="@+id/textViewChecksToBeCarriedOut"
+        android:layout_width="96dp"
+        android:layout_height="28dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sChecksToBeCarriedOut"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberChecksToBeCarriedOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewBluetoothCommand"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberRoiThickness" />
+
+    <EditText
+        android:id="@+id/editTextNumberChecksToBeCarriedOut"
+        android:layout_width="96dp"
+        android:layout_height="44dp"
+        android:ems="4"
+        android:hint="@string/hChecksToBeCarriedOut"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNoFaceDetect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextBluetoothCommandToSend"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChecksToBeCarriedOut" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureOk"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sTemperatureOk"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextTemperatureOk"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNoFaceDetect"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalOvalFaceOffsetX" />
+
+    <EditText
+        android:id="@+id/editTextTextTemperatureOk"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hTemperatureOk"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperatureMaxExceeded"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextNoFaceDetect"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureOk" />
+
+    <TextView
+        android:id="@+id/textViewNoFaceDetect"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sNoFaceDetect"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextNoFaceDetect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTemperatureOk"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBluetoothCommandToSend" />
+
+    <EditText
+        android:id="@+id/editTextTextNoFaceDetect"
+        android:layout_width="203dp"
+        android:layout_height="39dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hNoFaceDetect"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewErrorTemperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextTemperatureOk"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNoFaceDetect" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureMaxExceeded"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sTemperatureMaxExceeded"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextTemperatureMaxExceeded"
+        app:layout_constraintEnd_toStartOf="@+id/textViewErrorTemperature"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTemperatureOk" />
+
+    <EditText
+        android:id="@+id/editTextTextTemperatureMaxExceeded"
+        android:layout_width="204dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hTemperatureMaxExceeded"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperatureBelowLimit"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextErrorTemperature"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureMaxExceeded" />
+
+    <TextView
+        android:id="@+id/textViewErrorTemperature"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sErrorTemperature"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextErrorTemperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTemperatureMaxExceeded"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNoFaceDetect" />
+
+    <EditText
+        android:id="@+id/editTextTextErrorTemperature"
+        android:layout_width="204dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hErrorTemperature"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUnitTemperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextTemperatureMaxExceeded"
+        app:layout_constraintTop_toBottomOf="@+id/textViewErrorTemperature" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureBelowLimit"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sTemperatureBelowLimit"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextTemperatureBelowLimit"
+        app:layout_constraintEnd_toStartOf="@+id/textViewUnitTemperature"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTemperatureMaxExceeded" />
+
+    <EditText
+        android:id="@+id/editTextTextTemperatureBelowLimit"
+        android:layout_width="204dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hTemperatureBelowLimit"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperatureInsideThreshold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextUnitTemperature"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureBelowLimit" />
+
+    <TextView
+        android:id="@+id/textViewUnitTemperature"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sUnitTemperature"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextUnitTemperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTemperatureBelowLimit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextErrorTemperature" />
+
+    <EditText
+        android:id="@+id/editTextTextUnitTemperature"
+        android:layout_width="204dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hUnitTemperature"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperatureSentenceDetect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextTemperatureBelowLimit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUnitTemperature" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureInsideThreshold"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sTemperatureInsideThreshold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextThreshold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTemperatureSentenceDetect"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTemperatureBelowLimit" />
+
+    <EditText
+        android:id="@+id/editTextTextThreshold"
+        android:layout_width="204dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hTemperatureInsideThreshold"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperatureInProgress"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextTemperatureSentenceDetect"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureInsideThreshold" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureSentenceDetect"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sTemperatureSentenceDetect"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextTemperatureSentenceDetect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTemperatureInsideThreshold"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextUnitTemperature" />
+
+    <EditText
+        android:id="@+id/editTextTextTemperatureSentenceDetect"
+        android:layout_width="203dp"
+        android:layout_height="45dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hTemperatureSentenceDetect"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDetectionCompleted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextThreshold"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureSentenceDetect" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureInProgress"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sTemperatureInProgress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextProgress"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDetectionCompleted"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextThreshold" />
+
+    <EditText
+        android:id="@+id/editTextTextProgress"
+        android:layout_width="204dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hTemperatureInProgress"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNoBluetoothFound"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextDetectionCompleted"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureInProgress" />
+
+    <TextView
+        android:id="@+id/textViewDetectionCompleted"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sDetectionCompleted"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextDetectionCompleted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTemperatureInProgress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTemperatureSentenceDetect" />
+
+    <EditText
+        android:id="@+id/editTextTextDetectionCompleted"
+        android:layout_width="203dp"
+        android:layout_height="44dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hDetectionCompleted"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperatureInsideRange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextProgress"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetectionCompleted" />
+
+    <TextView
+        android:id="@+id/textViewNoBluetoothFound"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sNoBluetoothFound"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextNoBluetoothFound"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTemperatureInsideRange"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextProgress" />
+
+    <EditText
+        android:id="@+id/editTextTextNoBluetoothFound"
+        android:layout_width="204dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hNoBluetoothFound"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonMainFront"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextTemperatureInsideRange"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNoBluetoothFound" />
+
+
+    <TextView
+        android:id="@+id/textViewTemperatureInsideRange"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sTemperatureInsideRange"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextTemperatureInsideRange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewNoBluetoothFound"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextDetectionCompleted" />
+
+
+    <EditText
+        android:id="@+id/editTextTextTemperatureInsideRange"
+        android:layout_width="204dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/hTemperatureInsideRange"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMainNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextNoBluetoothFound"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureInsideRange" />
+
+    <Button
+        android:id="@+id/buttonMainNext"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="117dp"
+        android:layout_height="61dp"
+        android:text="@string/sButtonNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonResetLog"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTemperatureInsideRange" />
+
+    <RadioButton
+        android:id="@+id/radioButtonMainFront"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sCameraF"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonMainRetro"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxDebug"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNoBluetoothFound" />
+
+    <RadioButton
+        android:id="@+id/radioButtonMainRetro"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sCameraR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxLog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonMainFront" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDebug"
+        android:layout_width="74dp"
+        android:layout_height="21dp"
+        android:text="@string/sDebug"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxLog"
+        app:layout_constraintEnd_toStartOf="@+id/buttonResetLog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonMainFront"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNoBluetoothFound" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLog"
+        android:layout_width="75dp"
+        android:layout_height="18dp"
+        android:text="@string/sLog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonResetLog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonMainRetro"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDebug" />
+
+    <Button
+        android:id="@+id/buttonResetLog"
+        android:layout_width="82dp"
+        android:layout_height="56dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/sLogReset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMainNext"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDebug"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNoBluetoothFound" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

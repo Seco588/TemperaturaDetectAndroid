@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sTitleMain">CONFIGURAZIONE</string>
+    <string name="sRoiW">Larghezza Roi</string>
+    <string name="sRoiH">Altezza Roi</string>
+    <string name="sRoiOffsetW">Larghezza offset Roi</string>
+    <string name="sRoiOffsetH">Altezza offset Roi</string>
+    <string name="sTempMin">Min temp</string>
+    <string name="sTempMax">Max temp</string>
+    <string name="sTempThreshold">Soglia temp</string>
+    <string name="sRoiThickness">Spessore Roi</string>
+    <string name="sOvalFaceOffsetY">Offset-y ovale faccia</string>
+    <string name="sOvalFaceOffsetX">"Offest-x ovale faccia "</string>
+    <string name="sChecksToBeCarriedOut">Controlli da effettuare</string>
+    <string name="sBluetoothCommandLine">"Comando da inviare "</string>
+    <string name="sTemperatureOk">Temperature dentro al range</string>
+    <string name="hTemperatureOk">Temperatura ok</string>
+    <string name="sNoFaceDetect">Nessuna faccia rilevata</string>
+    <string name="hNoFaceDetect">Posizionati al centro</string>
+    <string name="sTemperatureMaxExceeded">Temperatura max superata</string>
+    <string name="hTemperatureMaxExceeded">Temperatura sopra al limite</string>
+    <string name="sErrorTemperature">Erroe temperatura</string>
+    <string name="hErrorTemperature">Errore contattare responsabile</string>
+    <string name="sTemperatureBelowLimit">Temperatura inferiore al limite</string>
+    <string name="hTemperatureBelowLimit">Temperatura sotto al minimo</string>
+    <string name="sUnitTemperature">Unità di temperatura</string>
+    <string name="hUnitTemperature">°C</string>
+    <string name="sTemperatureInsideThreshold">Temperatura all\'interno della soglia</string>
+    <string name="hTemperatureInsideThreshold">Temperatura OK ma verso il limite massimo</string>
+    <string name="sTemperatureSentenceDetect">Frase temperatura rilevata</string>
+    <string name="hTemperatureSentenceDetect">Temperatura rilevata :</string>
+    <string name="sTemperatureInProgress">Rilevamento temperatura in progresso</string>
+    <string name="hTemperatureInProgress">Progresso...</string>
+    <string name="sDetectionCompleted">Rilevamento completato</string>
+    <string name="hDetectionCompleted">Esci per avviare una nuova rilevazione</string>
+    <string name="sNoBluetoothFound">Dispositivo bluetooth non trovato</string>
+    <string name="hNoBluetoothFound">Sensore bluetooth non connesso</string>
+    <string name="sTemperatureInsideRange">Rilevazione completata</string>
+    <string name="hTemperatureInsideRange">Completamento 100%</string>
+    <string name="sMacAddress">Mac address bluetooth</string>
+    <string name="sButtonNext">Prossimo</string>
+    <string name="sButtonReturn">Indietro</string>
+    <string name="sBtTitle">Bluetooth</string>
+    <string name="sCameraF">Davanti</string>
+    <string name="sCameraR">Dietro</string>
+    <string name="sCamera">Fotocamera</string>
+    <string name="sBtButtonDiscovery">RICERCA</string>
+    <string name="sBtTurnOn">Il Bluetooth è acceso</string>
+    <string name="hBtTest">Controllo risposta bluetooth</string>
+    <string name="sBtButtonConnectLastDevice">Connessione ultimo dispositivo</string>
+    <string name="hPairedBlutoothDevices">Dispositivi abbinati</string>
+    <string name="sBtNotSupported">Bluetooth non supportato</string>
+    <string name="sBtIsAvailable">Bluetooth disponibile</string>
+    <string name="sBtEnable">Attivazione del Bluetooth ...</string>
+    <string name="sBtAlreadyOn">Il Bluetooth è già attivo</string>
+    <string name="sBtAlreadyOff">Il Bluetooth è già disattivo</string>
+    <string name="sBtOn">Il Bluetooth è acceso</string>
+    <string name="sBtTurnOff">Il Bluetooth è disattivato</string>
+    <string name="sBtDiscovery">Ricerca dispositivi</string>
+    <string name="sBtOff">Disattivazione del Bluetooth</string>
+    <string name="sBtConnectLastDevice">Attiva il Bluetooth per ottenere dispositivi Bluetooth accoppiati</string>
+    <string name="hBluetoothTestCommand">Scrivi il comando da inviare</string>
+    <string name="sBtConnect">Connessione</string>
+    <string name="sBtAlreadyDiscovery">Ricerca già attiva</string>
+    <string name="sInstructions">Ciao !
+        \nDi seguito troverai una breve guida per aiutarti a connettere il dispositivo bluetooth
+        \n1)Assicurati che il bluetooth sia impostato su ON, come conferma il pulsante Bluetooth ON deve essere disattivo
+        \n2)Clicca su ricerca per ricercare i dispositivi Buetooth vicini, i dispositivi trovati compariranno nella lista sulla destra
+        \n3)Una volta trovato il vostro dispositivo cliccateci sopra per selezionarlo, per conferma il nome del dispositivo cliccato comparira tra i tasti prossimo e indietro
+        \n4)Selezionato il dispositivo potete cliccare sul pulsante connessione per avviare una connessione e avrete conferma della connessione avvenuta sempre tramite un messaggio tra i pulsati next e return
+        \n5)Ora che siete collegati potrete testare il dispositivo scrivendo il comando da inviare al dispositivo nell\'apposita sezione e poi cliccare su test connect invierete il comando e la risposta del dispositivo la ritroverete nella schermata sottostante ( questo passaggio non è obbligatoro)
+        \n6)Quando sarete pronti cliccate su prossimo per avviare l\'applicazione.</string>
+    <string name="sBtDiscoveryStart">Ricerca...</string>
+    <string name="sBtFoundNewDevice">Nuovo dispositivo trovato</string>
+    <string name="sBtSelectDevice">Dispositivo selezionato :</string>
+    <string name="sBtDiscoveryFinished">Ricerca finita</string>
+    <string name="sBtNotBonded">Dispositivo non accoppiato</string>
+    <string name="sBtOnConnection">Connessione...</string>
+    <string name="sBtConnectionComplete">Connessione stabilita, ora puoi inviare comandi dal dispositivo</string>
+    <string name="sBtNoLastConnect">Nessuna connessione salvata in precedenza</string>
+    <string name="sBtNotConnnect">Connessione fallita</string>
+    <string name="sBtDisconnect">Disconnessione dal dispositivo avvenuta con successo</string>
+    <string name="sBtConnected">"Connessione riuscita , ora puoi ricevere e inviare dati dal dispositivo : "</string>
+    <string name="sBtName">"Nome : "</string>
+    <string name="sBtBondState">"Stato accoppiamento : "</string>
+    <string name="sBtErrorPaired">Errore di accoppiamento bluetooth</string>
+    <string name="sBtResponse">"Risposta : "</string>
+    <string name="sBtErrorConnectLastDevie">Per favore seleziona un dispositivo dalla lista ed effettua la connessione , se la connessione va a buon fine il device verrà memorizzato e utilizzato per le connessioni future e la chiamata di connessione all\'ultimo dispositivo connesso verrà abilitata</string>
+    <string name="sSavePreference">Le preferenze sono state salvate</string>
+    <string name="sBtErrorSocket">Errore nella creazione del soket</string>
+    <string name="sBtErrorCreateConnectionSocket">Errore di connessione con il socket</string>
+    <string name="sBtErrorCreateConnectionStream">Errori del flusso di connessione</string>
+    <string name="sBtErrorDisconnectStream">Errore durante la disconnessione del flusso</string>
+    <string name="sBtErrorDisconnectSocket">Errore durante la disconnessione della socket</string>
+    <string name="sBtButtonDisconnect" translatable="false">DISCONNETTI</string>
+    <string name="sMainPermissionNotOk">Abilitare i permessi per proseguire :</string>
+    <string name="sBtOkConnection">Connesso</string>
+    <string name="sBtKoConnection">Disconnesso</string>
+    <string name="sBtErrorResp">Errore test Bluetooth</string>
+</resources>

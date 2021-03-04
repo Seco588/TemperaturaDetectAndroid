@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.opencv.android.JavaCamera2View
+        android:id="@+id/javaCamera2View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-47dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="298dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/javaCamera2View"
+        app:layout_constraintEnd_toStartOf="@+id/javaCamera2View"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/javaCamera2View"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfo" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="383dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="618dp"
+        android:layout_marginBottom="57dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="@+id/javaCamera2View"
+        app:layout_constraintEnd_toStartOf="@+id/javaCamera2View"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/javaCamera2View"
+        app:layout_constraintTop_toTopOf="@+id/javaCamera2View" />
+
+    <TextView
+        android:id="@+id/textViewDebug"
+        android:layout_width="216dp"
+        android:layout_height="330dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="401dp"
+        android:background="@color/colorTextBackground"
+        android:gravity="start"
+        android:textColor="@color/colorTextDebug"
+        app:layout_constraintBottom_toBottomOf="@+id/javaCamera2View"
+        app:layout_constraintEnd_toEndOf="@+id/javaCamera2View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="135dp"
+        android:layout_height="82dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDebug"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toEndOf="@+id/textViewDebug"
+        app:layout_constraintTop_toTopOf="@+id/javaCamera2View" />
+
+    <TextView
+        android:id="@+id/textViewDirection"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="567dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/textViewInfo"
+        app:layout_constraintEnd_toStartOf="@+id/javaCamera2View"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/javaCamera2View"
+        app:layout_constraintTop_toTopOf="@+id/javaCamera2View" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
